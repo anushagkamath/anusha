@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .section {
+            position: relative;
+            float: left;
+            width: 33.33%;
+            padding: 20px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .section-title {
+            position: absolute;
+            top: 0; right: 0;
+            background-color: #FF5733;
+            color: white;
+            padding: 5px 10px;
+        }
+        @media (max-width: 991px) {
+            /* Tablet View */
+            .section { width: 50%; }
+            .section:nth-child(3) {
+                width: 100%;
+                clear: both;
+            }
+        }
+        @media (max-width: 767px) {
+            /* Mobile View */
+            .section { width: 100%; clear: both; }
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h1>Foodie Delights</h1>
+        <div class="section" style="background-color: #F5B041;">
+            <div class="section-title">Chicken</div>
+            <p>Chicken is a popular choice in many cuisines around the world. It's versatile, flavorful, and can be cooked in a variety of ways, such as grilled, roasted, or fried. Whether it's a classic roasted chicken, a mouthwatering chicken curry, or a spicy buffalo chicken wing, there's something for everyone to enjoy!.</p>
+        </div>
+        <div class="section" style="background-color: #3498DB;">
+            <div class="section-title">Beef</div>
+            <p>UBeef is a staple meat in many cuisines, known for its rich flavor and tenderness when cooked correctly. It can be prepared in various ways, such as grilled, roasted, stir-fried, or stewed, and can be found in dishes ranging from juicy burgers to hearty stews and tender steaks. Beef is a beloved protein choice for many meat lovers and adds a delicious depth of flavor to a wide variety of dishes.</p>
+        </div>
+        <div class="section" style="background-color: #58D68D;">
+            <div class="section-title">Sushi</div>
+            <p>Sushi is a traditional Japanese dish made with vinegared rice, usually topped with fresh fish or seafood, and often accompanied by vegetables and seaweed. It's known for its unique combination of flavors and textures, as well as its beautiful presentation. From simple and delicate nigiri to elaborate and artistic rolls, sushi has become a global sensation and a favorite of many food lovers worldwide..</p>
+        </div>
+    </div>
+</body>
+  </html>
+  
